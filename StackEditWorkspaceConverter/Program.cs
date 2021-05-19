@@ -19,8 +19,7 @@ namespace StackEditWorkspaceConverter
                     string targetDirectory = args[0];
                     string exportFile = args[1];
 
-                    WorkspaceExporter exporter = new WorkspaceExporter(targetDirectory);
-
+                    var exporter = new WorkspaceExporter(targetDirectory);
                     File.WriteAllText(exportFile, exporter.Export());
                 }
                 catch (Exception e)
