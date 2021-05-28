@@ -16,13 +16,13 @@ namespace StackEditWorkspaceConverter.Util
 
             for (int i = 0; i < UID_LENGTH; i++)
             {
-                uid += GetChar();
+                uid += GetRandomChar();
             }
 
             return uid;
         }
 
-        private static char GetChar()
+        private static char GetRandomChar()
         {
             const int upperCaseAlphabetTotal = 26;
             const int lowerCaseAlphabetTotal = 26;
